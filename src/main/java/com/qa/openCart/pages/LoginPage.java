@@ -13,11 +13,14 @@ import io.qameta.allure.Step;
 public class LoginPage {
 
 	private WebDriver driver;
+
 	private ElementUtils eleUtil;
 
 	// By locators
 	private By userName = By.id("input-email");
+	
 	private By password = By.id("input-password");
+	
 	private By loginBtn = By.xpath("//input[@value='Login']");
 	private By forgotPwdLink = By.linkText("Forgotften Password");
 	private By logo = By.xpath("//img[@title='naveenopencart']");
@@ -47,12 +50,12 @@ public class LoginPage {
 		System.out.println("Login page url: " + url);
 		return url;
 	}
-	
+
 	@Step("Checking forgot password link exist")
 	public boolean isForgotPwdLinkExists() {
 		return eleUtil.waitForVisibilityOfElement(forgotPwdLink, AppConstants.SHORT_DEFAULT_WAIT).isDisplayed();
 	}
-	
+
 	@Step("Checking logo exist")
 	public boolean isLogoExist() {
 		return eleUtil.waitForVisibilityOfElement(logo, AppConstants.SHORT_DEFAULT_WAIT).isDisplayed();
@@ -71,7 +74,7 @@ public class LoginPage {
 	public boolean searchAvailability() {
 		return eleUtil.checkSingleElementPresent(searchField);
 	}
-	
+
 	@Step("Navigating to registration page")
 	public RegisterPage navigateToRegisterPage() {
 		eleUtil.waitForVisibilityOfElement(registerLink, AppConstants.MEDIUM_DEFAULT_WAIT).click();
