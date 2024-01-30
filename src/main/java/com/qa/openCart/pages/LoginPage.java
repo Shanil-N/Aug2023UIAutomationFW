@@ -17,6 +17,7 @@ public class LoginPage {
 	private ElementUtils eleUtil;
 
 	// By locators
+	
 	private By userName = By.id("input-email");
 	
 	private By password = By.id("input-password");
