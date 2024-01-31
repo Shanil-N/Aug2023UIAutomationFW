@@ -13,22 +13,16 @@ import io.qameta.allure.Step;
 public class LoginPage {
 
 	private WebDriver driver;
-
 	private ElementUtils eleUtil;
 
 	// By locators
-	
 	private By userName = By.id("input-email");
-	
 	private By password = By.id("input-password");
-	
 	private By loginBtn = By.xpath("//input[@value='Login']");
 	private By forgotPwdLink = By.linkText("Forgotften Password");
 	private By logo = By.xpath("//img[@title='naveenopencart']");
 	private By searchField = By.name("search");
-
 	private By registerLink = By.linkText("Register");
-
 	private By footerLinks = By.xpath("//footer//li");
 
 	// page constructor
