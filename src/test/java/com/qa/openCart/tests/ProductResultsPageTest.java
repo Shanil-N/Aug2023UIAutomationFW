@@ -44,7 +44,7 @@ public class ProductResultsPageTest extends BaseTest {
 	public Object[][] getProductInfoData() {
 		return new Object[][] {
 			{"MacBook","MacBook Pro", "Apple", "In Stock", "Product 18", "800","$2,000.00","$2,000.00"},
-			{"MacBook","MacBook Air", "Apple", "In Stock", "Product 17", "700","$1,202.00","$1,000.00"}
+			{"MacBook","MacBook Air", "Apple", "Out Of Stock", "Product 17", "700","$1,202.00","$1,000.00"}
 		};	
 	}
 	
