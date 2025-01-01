@@ -19,7 +19,7 @@ public class LoginPage {
 	private By userName = By.id("input-email");
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[@value='Login']");
-	private By forgotPwdLink = By.linkText("Forgotften Password");
+	private By forgotPwdLink = By.linkText("Forgotten Password");
 	private By logo = By.xpath("//img[@title='naveenopencart']");
 	private By searchField = By.name("search");
 	private By registerLink = By.linkText("Register");
