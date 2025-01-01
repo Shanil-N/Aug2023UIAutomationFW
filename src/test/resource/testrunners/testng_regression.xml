@@ -20,21 +20,21 @@
 		</classes>
 	</test>
 
-	<!--<test name="Accounts Page Test">
+	<test name="Accounts Page Test">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.openCart.tests.AccountsPageTest" />
 		</classes>
-	</test>-->
+	</test>
 
-	<!--	<test name="Product Results Page Test">
+	<test name="Product Results Page Test">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.qa.openCart.tests.ProductResultsPageTest" />
 		</classes>
 	</test>
 
-	<test name="Registre Page Test">
+	<!--<test name="Registre Page Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.qa.openCart.tests.RegistrePageTest" />
