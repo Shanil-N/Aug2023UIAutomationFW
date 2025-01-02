@@ -12,7 +12,6 @@
 		<!--<listener
 			class-name="com.qa.openCart.listeners.AnnotationTransformer" />-->
 	</listeners>
-	
 
 	<test name="Login Page Test">
 		<parameter name="browser" value="chrome"></parameter>
