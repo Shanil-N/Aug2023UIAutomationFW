@@ -13,7 +13,6 @@
 			class-name="com.qa.openCart.listeners.AnnotationTransformer" />-->
 	</listeners>
 
-<!--
 	<test name="Login Page Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
@@ -26,7 +25,7 @@
 		<classes>
 			<class name="com.qa.openCart.tests.AccountsPageTest" />
 		</classes>
-	</test>-->
+	</test>
 
 	<test name="Product Results Page Test">
 		<parameter name="browser" value="edge"></parameter>
