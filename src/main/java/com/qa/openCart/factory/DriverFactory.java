@@ -28,8 +28,8 @@ public class DriverFactory {
 
 	public WebDriver initDriver(Properties prop) {
 
-		String browserName = prop.getProperty("browser"); // To get the browser from properties file
-		// String browserName = System.getProperty("browser");// To get the browser from
+//		String browserName = prop.getProperty("browser"); // To get the browser from properties file
+		 String browserName = System.getProperty("browser");// To get the browser from
 		// system
 
 		highlight = prop.getProperty("highlight");
