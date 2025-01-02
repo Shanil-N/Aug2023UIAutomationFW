@@ -72,22 +72,5 @@ public class ProductResultsPageTest extends BaseTest {
 		softAssert.assertAll();
 	}
 	
-//	@Test
-//	public void productInfoTest() {
-//		searchResultsPage = accPage.doSearch("MacBook");
-//		productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
-//
-//		Map<String, String> productDetailsMap = productInfoPage.getProductDetails();
-//
-//		softAssert.assertEquals(productDetailsMap.get("Brand"), "Apple");
-//		softAssert.assertEquals(productDetailsMap.get("Availability"), "In Stock");
-//		softAssert.assertEquals(productDetailsMap.get("Product Code"), "Product 18");
-//		softAssert.assertEquals(productDetailsMap.get("Reward Points"), "800");
-//
-//		softAssert.assertEquals(productDetailsMap.get("Price"), "$2,000.00");
-//		softAssert.assertEquals(productDetailsMap.get("ExTaxPrice"), "$2,000.00");
-//
-//		softAssert.assertAll();
-//	}
 	
 }
