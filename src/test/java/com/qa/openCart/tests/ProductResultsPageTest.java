@@ -53,7 +53,7 @@ public class ProductResultsPageTest extends BaseTest {
 		return ExcelUtils.getTestData(AppConstants.PRODUCT_INFO_DATA_SHEET_NAME);
 	}
 	
-	@Test(dataProvider = "getProductInfoDataExcel")
+	@Test(dataProvider = "getProductInfoData")
 	public void productInfoTest(String searchKey, String productName, String brandName, String availabilityStatus,
 			String productCode, String rewardPoints, String price, String priceExtTax) {
 		searchResultsPage = accPage.doSearch(searchKey);
