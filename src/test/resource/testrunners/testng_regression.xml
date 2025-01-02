@@ -19,7 +19,6 @@
 			<class name="com.qa.openCart.tests.LoginPageTest" />
 		</classes>
 	</test>
-	
 
 	<test name="Accounts Page Test">
 		<parameter name="browser" value="firefox"></parameter>
