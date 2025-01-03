@@ -27,14 +27,55 @@ public class DriverFactory {
 	public static String highlight = null;
 
 	public WebDriver initDriver(Properties prop) {
+		/*
+		 * This is the code before adding the null check
+		 * 
+		 * 
+		 * // String browserName = prop.getProperty("browser"); // To get the browser
+		 * from properties file String browserName = System.getProperty("browser");// To
+		 * get the browser from // system
+		 * 
+		 * highlight = prop.getProperty("highlight");
+		 * 
+		 * System.out.println("Browser name is: " + browserName);
+		 * 
+		 * optionsManager = new OptionsManager(prop);
+		 * 
+		 * switch (browserName.toLowerCase().trim()) {
+		 * 
+		 * case "chrome": // passing driver without thread local // driver = new
+		 * ChromeDriver(optionsManager.getChromeOptions()); // passing drive with thread
+		 * local tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
+		 * break; case "firefox": // driver = new
+		 * FirefoxDriver(optionsManager.getFirefoxOptions()); tlDriver.set(new
+		 * FirefoxDriver(optionsManager.getFirefoxOptions())); break; case "edge": //
+		 * driver = new EdgeDriver(optionsManager.getEdgeOptions()); tlDriver.set(new
+		 * EdgeDriver(optionsManager.getEdgeOptions())); break; case "safari": // driver
+		 * = new SafariDriver(); tlDriver.set(new SafariDriver()); break; default:
+		 * System.out.println("Please pass the right browser name" + browserName); throw
+		 * new FrameworkException("No browser found");
+		 * 
+		 * }
+		 * 
+		 * getDriver().manage().deleteAllCookies();
+		 * getDriver().manage().window().maximize();
+		 * getDriver().get(prop.getProperty("url"));
+		 * 
+		 * return getDriver();
+		 * 
+		 * 
+		 */
 
-//		String browserName = prop.getProperty("browser"); // To get the browser from properties file
-		 String browserName = System.getProperty("browser");// To get the browser from
-		// system
+		String browserName = System.getProperty("browser", prop.getProperty("browser"));
+
+		if (browserName == null || browserName.isBlank()) {
+			System.out.println("No browser specified, defaulting to chrome");
+			browserName = "chrome";
+		}
+
+		System.out.println("Browser name is: " + browserName);
 
 		highlight = prop.getProperty("highlight");
-		
-		System.out.println("Browser name is: " + browserName);
 
 		optionsManager = new OptionsManager(prop);
 
